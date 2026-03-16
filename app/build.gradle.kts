@@ -38,6 +38,11 @@ android {
     buildFeatures {
         compose = true
     }
+    packaging {
+        resources {
+            excludes += "plugin.properties"
+        }
+    }
 }
 
 dependencies {
